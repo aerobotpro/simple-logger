@@ -1,1 +1,1 @@
-# Simple IP-Logger w/ simple stat viewer :)
+# Simple IP-Logger w/ authed stat viewer :)
