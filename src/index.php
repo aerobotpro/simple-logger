@@ -26,12 +26,13 @@ $adminKey = file_get_contents("key.dat");
 // Get Info From Our Visitor
 $my_addr = $_SERVER['HTTP_X_FORWARDED_FOR'];
 $referer = $_SERVER['HTTP_REFERER'];
+$method = $_SERVER['REQUEST_METHOD'];
 if (!$referrer){$referer = "Direct";}
 $UA = $_SERVER['HTTP_USER_AGENT'];
 $timeNow_calendar = date('Y-m-d');
 $timeNow_exp = date('H:m:s');
 $timeNow = "Time: $timeNow_calendar $timeNow_exp";
-$thisHit = "[Logger Hit -> $timeNow] - IP: $my_addr | Referrer: $referer | User-Agent: $UA\r\n";
+$thisHit = "[Logger Hit -> $timeNow] - IP: $my_addr | Referrer: $referer | User-Agent: $UA | Request Method: $method\r\n";
 
 
 
