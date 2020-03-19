@@ -1,10 +1,6 @@
 <?php
 //Idea and proof of concept by Aero.
 
-//IMPORTANT: LOGGER DOESN'T ACTUALLY LOG USERS HERE ON REPL
-//AS REPL(s) IS/ARE VIRTUALIZED.
-//Truly to use on your own environment :) 
-
 //Set Max Script Life
 ini_set('max_execution_time', 30);
 
